@@ -12,3 +12,7 @@ if(rand=num){
 else{
     console.log("try again")
 }
+//for loop
+for (let i = 0; i < 50; i++) {
+    console.log("i like singing")
+}
