@@ -22,3 +22,10 @@ while (i<50) {
    i=i+5;
    console.log(i) 
 }
+let age=14
+if (age<21 ) {
+    console.log("she can not vote")
+    
+} else {
+    console.log("she can vote")
+}
