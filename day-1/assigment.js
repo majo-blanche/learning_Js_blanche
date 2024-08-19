@@ -16,3 +16,9 @@ else{
 for (let i = 0; i < 50; i++) {
     console.log("i like singing")
 }
+//whie loop
+let i=10
+while (i<50) {
+   i=i+5;
+   console.log(i) 
+}
