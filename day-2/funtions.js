@@ -70,3 +70,12 @@ const person3={
 console.log(person.fullName.call(person1))
 console.log(person.fullName.call(person2,"bamenda","cameroon"))
 console.log(person.fullName.call(person3,["paris","france"]))
+//function to increment couter
+const edd=(function(){
+    let counter=-1;
+return function(){counter += 1; return counter}
+})();
+edd();
+edd();
+edd();
+console.log(edd())
