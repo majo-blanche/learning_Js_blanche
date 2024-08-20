@@ -15,8 +15,16 @@ function tocelsius(fahrenheit){
 }
 let value="the temperature is"+tocelsius(55)+"celsius";
 console.log(value)
-//funtion expression
+/*funtion expression
 const myFunction= funtion ("a","b","return a*b");
 let z=x(4,3);
-console.log(z)
-//self-invoking functions(functions without names)
+console.log(z)*/
+function myFunction(a,b) {
+return a*b
+}
+let x=myFunction(4,3)*2;
+console.log(x);
+/*self-invoking
+(funtion(){
+    let m ="hello";
+})();*/
