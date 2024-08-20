@@ -19,3 +19,4 @@ console.log(value)
 const myFunction= funtion ("a","b","return a*b");
 let z=x(4,3);
 console.log(z)
+//self-invoking functions(functions without names)
