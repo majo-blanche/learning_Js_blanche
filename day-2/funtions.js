@@ -24,7 +24,9 @@ return a*b
 }
 let x=myFunction(4,3)*2;
 console.log(x);
-/*self-invoking
-(funtion(){
-    let m ="hello";
-})();*/
+//self-invoking
+let annonymous=(function (){
+    let y="hello";
+    console.log(y);
+})()
+console.log(annonymous);
