@@ -35,14 +35,16 @@ x=findMax(1,123,500,115,44,88);
 function findMax(){
     let max= -Infinity;
     for(let i=0;i<arguments.length;i++){
-        if(arguments[i]){
+        if(arguments[i]>max){
             max=arguments[i];
         }
     }
     return max;
 }
+console.log(x)
 //invoking a function
 function myFunction(a,b){
     return a*b;
 }
-myFunction(10,2)
+let p =myFunction(10,2)
+console.log(p)
