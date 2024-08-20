@@ -41,3 +41,8 @@ function findMax(){
     }
     return max;
 }
+//invoking a function
+function myFunction(a,b){
+    return a*b;
+}
+myFunction(10,2)
