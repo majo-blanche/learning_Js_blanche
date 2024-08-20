@@ -79,3 +79,34 @@ edd();
 edd();
 edd();
 console.log(edd());
+//calculating the area of shapes
+function Area(l,w,h,r){
+let shape=prompt("enter a shape")
+if(shape=="square"){
+    let l=parseInt(prompt("enter the lenght"));
+    return l*l;
+}
+else if(shape=="rectangle"){
+    
+    let l=parseInt(prompt("enter the lenght"));
+    let w=parseInt(prompt("enter the width"));
+    return l*w;
+}
+else if(shape=="triangle"){
+    let w=parseInt(prompt("enter the width"));
+    let h=parseInt(prompt("enter the height"));
+    return h*w/2;
+}
+else if(shape=="cicle"){
+    let r=parseInt(prompt("enter the radius"));
+    p=3.14
+    return p*r*r
+}
+else{
+console.log("enter another shape please")
+    }
+}
+let A=Area();
+    console.log(Area())
+
+
