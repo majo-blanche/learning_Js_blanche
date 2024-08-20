@@ -78,4 +78,4 @@ return function(){counter += 1; return counter}
 edd();
 edd();
 edd();
-console.log(edd())
+console.log(edd());
