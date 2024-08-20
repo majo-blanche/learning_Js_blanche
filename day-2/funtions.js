@@ -42,9 +42,31 @@ function findMax(){
     return max;
 }
 console.log(x)
-//invoking a function
+//invoking a function and function call 
 function myFunction(a,b){
     return a*b;
 }
 let p =myFunction(10,2)
 console.log(p)
+
+const person={
+    fullName:function(city,country){
+        return this.firstName+" "+this.lastName+","+city+","+country;
+    }
+}
+const person1={
+firstName:"Majo",
+    lastName:"blanche"
+
+}
+const person2={
+    firstName:"Kenna",
+    lastName:"Nora"   
+}
+const person3={
+    firstName:"cham",
+    lastName:"emmilia"  
+}
+console.log(person.fullName.call(person1))
+console.log(person.fullName.call(person2,"bamenda","cameroon"))
+console.log(person.fullName.call(person3,["paris","france"]))
