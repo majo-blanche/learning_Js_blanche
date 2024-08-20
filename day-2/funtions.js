@@ -9,4 +9,4 @@ function add(x,y,z){
 }
 let answer=add(2,5,9)
 console.log(answer)
-//converting from fahrenheit 
+//converting from fahrenheit to celsius
