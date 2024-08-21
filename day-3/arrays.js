@@ -147,7 +147,6 @@ const board = [
     let total=quantity*price;
     console.log("you total cost is",total,"frs")
 }
-
 additem();
 
     
