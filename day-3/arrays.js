@@ -92,9 +92,9 @@ shapes.forEach((item,index,array) =>{
 const combinedfriuts=animals.concat(shapes);
 console.log(combinedfriuts)
 //copy an array
-console.log([...animals])
-console.log(Array.from(animals))
-console.log(animals.slice())
+console.log([...animals]);
+console.log(Array.from(animals));
+console.log(animals.slice());
 const animals2=animals
 animals.unshift("goat","hen")
 console.log(animals)
