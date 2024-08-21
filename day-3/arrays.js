@@ -139,9 +139,9 @@ const board = [
   let price=4000
   function additem( name, quantity){
     const item={name,quantity}
-    name=prompt("enter the name:")
+    name=prompt("enter the name:");
     quantity=parseInt(prompt("enter the quantity:"))
-    cart.push(item)
+    cart.push(item);
     console.log(name,quantity);
     console.log("one cost",price,"frs");
     let total=quantity*price;
