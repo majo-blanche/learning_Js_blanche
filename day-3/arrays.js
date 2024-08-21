@@ -49,3 +49,7 @@ console.log(shapes.indexOf("triangle"));
 const newlength=shapes.push("trapezium");
 console.log(shapes);
 console.log(newlength);
+//removing the last element in an array
+const removeditem=shapes.pop();
+console.log(shapes);
+console.log(removeditem); 
