@@ -53,3 +53,8 @@ console.log(newlength);
 const removeditem=shapes.pop();
 console.log(shapes);
 console.log(removeditem); 
+//removing multiple item from thre end of the array
+const start=2;
+const removeditems=shapes.splice(start);
+console.log(shapes);
+console.log(removeditems);
