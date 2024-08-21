@@ -35,7 +35,7 @@ const fruits3 = "Apple, Banana".split(", ");
 console.log(fruits3.length);
 */
 //creating a string from an array
-const animals=["pig","dog"]
+const animals=["pig","dog","cat","lion"]
     const animalsString=animals.join(",");
 console.log(animalsString);
 //access an array item by its index
@@ -76,5 +76,22 @@ const star=shapes.indexOf("hexagone");
 const deletCount=1;
 const removedlement=shapes.splice(star,deletCount);
 console.log(shapes)
-conlsole.log(removedlement)
+console.log(removedlement)
 //remove multiple items bu index
+const removedelemen=shapes.splice(0,2,"cone","pyramide")
+console.log(removedelemen)
+//iterate over an array
+for(const shape of shapes){
+    console.log(shape);
+}
+//call a function on each element in an array
+shapes.forEach((item,index,array) =>{
+    console.log(index,item);
+})
+//merge multiple arrays together
+const combinedfriuts=animals.concat(shapes);
+console.log(combinedfriuts)
+//copy an array
+console.log([...animals])
+console.log(Array.from(animals))
+console.log(animals.slice())
