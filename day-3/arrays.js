@@ -39,7 +39,7 @@ const animals=["pig","dog"]
     const animalsString=animals.join(",");
 console.log(animalsString);
 //access an array item by its index
-const shapes=["square","triangle","regtangle","cicle"]
+const shapes=["square","triangle","regtangle","cicle","pentagon"]
 shapes[0];
 console.log(shapes[0]);
 //checking if an arr contain aparticular element
@@ -54,7 +54,26 @@ const removeditem=shapes.pop();
 console.log(shapes);
 console.log(removeditem); 
 //removing multiple item from thre end of the array
-const start=2;
-const removeditems=shapes.splice(start);
+const removeditems=shapes.splice(2);
 console.log(shapes);
 console.log(removeditems);
+//removing the first item from and array
+const removedItem=shapes.shift();
+console.log(shapes)
+console.log(removedItem)
+//removing mul-items at the beginning of an array
+const start=0;
+const deleteCount=2;
+const removedelement=shapes.splice(start,deleteCount);
+console.log(shapes);
+console.log(removedelement);
+//add a new first iterm to an array
+const newLength = shapes.unshift("polygone","hexagone","octagone");
+console.log(shapes);
+console.log(newLength);
+//remove a single item by index
+const star=shapes.indexOf("hexagone");
+const deletCount=1;
+const removedlement=shapes.splice(star,deletCount);
+console.log(shapes)
+conlsole.log(removedlement)
