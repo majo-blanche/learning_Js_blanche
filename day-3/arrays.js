@@ -132,3 +132,23 @@ const board = [
     values.push([x*2,x*3,x*4,x*5,x*6,x*7,x*8,x*9,x*10,x*11,x*12]);
   }
   console.table(values);
+
+
+  //shopping cart
+  let cart=[];
+  let price=4000
+  function additem( name, quantity){
+    const item={name,quantity}
+    name=prompt("enter the name:")
+    quantity=parseInt(prompt("enter the quantity:"))
+    cart.push(item)
+    console.log(name,quantity);
+    console.log("one cost",price,"frs");
+    let total=quantity*price;
+    console.log("you total cost is",total,"frs")
+}
+
+additem();
+
+    
+
