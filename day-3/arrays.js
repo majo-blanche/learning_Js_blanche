@@ -95,3 +95,40 @@ console.log(combinedfriuts)
 console.log([...animals])
 console.log(Array.from(animals))
 console.log(animals.slice())
+const animals2=animals
+animals.unshift("goat","hen")
+console.log(animals)
+console.log(animals2)
+
+//creating 2-d array
+const board = [
+    ["R", "N", "B", "Q", "K", "B", "N", "R"],
+    ["P", "P", "P", "P", "P", "P", "P", "P"],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    ["p", "p", "p", "p", "p", "p", "p", "p"],
+    ["r", "n", "b", "q", "k", "b", "n", "r"],
+  ];
+  
+  console.log(`${board.join("\n")}\n\n`);
+  
+  // Move King's Pawn forward 2
+  board[4][4] = board[6][4];
+  board[6][4] = " ";
+  console.log(board.join("\n"));
+
+  const square= [
+    ["r","n","q"],
+    ["a","h","z"],
+    ["t","s","y"],
+    ["b","j","f"],
+  ];
+  console.log(`${square.join("\n")}`)
+  //time table
+  const values=[];
+  for( let x=0;x<=13;x++){
+    values.push([x*2,x*3,x*4,x*5,x*6,x*7,x*8,x*9,x*10,x*11,x*12]);
+  }
+  console.table(values);
