@@ -77,3 +77,4 @@ const deletCount=1;
 const removedlement=shapes.splice(star,deletCount);
 console.log(shapes)
 conlsole.log(removedlement)
+//remove multiple items bu index
