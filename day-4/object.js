@@ -34,7 +34,7 @@ person.name= function(){
 console.log(person)
 console.log(person.name());
 //build a text
-let text="good morning";
+let text="goodmorning";
 for(let x in person){
     text += person[x]+" ";
 };
@@ -42,8 +42,8 @@ for(let x in person){
 document.getElementById("demo").innerHTML = text;
 console.log(text);
 
-//using objet.values()
-const myArray=object.value(person);
+//using objet.values()  
+const myArray=Object.values(person);
 //display the array
 document.getElementById("demo").innerHTML=myArray;
 
