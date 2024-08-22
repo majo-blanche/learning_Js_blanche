@@ -1,0 +1,29 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    border: 100vh;
+    margin: 50px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+main{
+    background-color: rgb(218, 157, 191);
+    margin: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    justify-content: center;
+}
+input{
+    padding: 5px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+}
+button{
+    border-radius: 3px;
+    background-color: rgb(64, 6, 51);
+    color: aliceblue;
+}
