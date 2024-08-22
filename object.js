@@ -2,12 +2,22 @@ const girl={
     firstname:"majo",
     lastname :"blanche",
     age:17,
-    eyecolor:"black"
-}
+    eyecolor:"black",
+    nationality:"english",
+    fullname:function(){
+        return this.firstname+" "+this.lastname;
+        
+    }
+    
+};
+console.log(girl.firstname +" is " +girl.age +" year old");
+
 console.log(girl);
+console.log(girl.fullname());
+
 const person=new Object();
 person.firstname="majo";
 person.lastname="blanche";
 person.age=50;
 person.eyecolor="black"
-console.log(new Object())
+console.log(person)
