@@ -14,6 +14,7 @@ const girl={
     car2:"bmw",
     car3:"fiat"
 }
+
     };
 delete girl.age;//deleting
 console.log(girl.firstname +" is " +girl.age +" year old");
@@ -32,4 +33,18 @@ person.name= function(){
 };
 console.log(person)
 console.log(person.name());
+//build a text
+let text="good morning";
+for(let x in person){
+    text += person[x]+" ";
+};
+//display text
+document.getElementById("demo").innerHTML = text;
+console.log(text);
+
+//using objet.values()
+const myArray=object.value(person);
+//display the array
+document.getElementById("demo").innerHTML=myArray;
+
 
