@@ -2,6 +2,8 @@ let map = new Map();
 map.set('1','goodbye');
 map.set(1,'hello');
 map.set(true,'false');
+let obt=Object.fromEntries(map.entries());
+console.log(obt.true);
 console.log(map.get(1));
 console.log(map.get('1'));
 console.log(map.get(true))
@@ -29,10 +31,21 @@ for(let vegetable of recipeMap.keys()){
 }
 recipeMap.forEach((value,key)=>{console.log(`${key}: ${value}`);
 })
+
+
 //map from object
 let obj={
     name:"john",
     age:30
 };
 let mep = new Map(Object.entries(obj));
-console.log(map.get('name'));
+console.log(mep.get('name'));
+console.log(mep.get('age'));
+
+//object from map
+let price=Object.fromEntries([
+    ['plantain',1],
+    ['banana',4],
+    ['fish',6],
+]);
+console.log(price.fish);
